@@ -1,0 +1,11 @@
+services:
+  webserver:
+    image: khw73850/webserver
+    ports :
+      - "5001:5001"
+  webclient:
+    image: khw73850/webclient
+    depends_on:
+      - webserver
+
+
